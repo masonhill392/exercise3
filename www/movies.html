@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+  <meta http-equiv="Content-Secrity-Policy"
+    content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="css/framework7-bundle.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/framework7-icons.css" />
+  <!-- <link rel="stylesheet" href="css/index.css"> -->
+  <title>podcasts</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- panel components go here -->
+    <!-- Right panel, with cover effect -->
+    <div class="panel panel-right panel-cover  bg-color-darkgrey">
+      <div class="header">
+        <h1 class="text-color-white">See these this season!</h1>
+
+        <hr>
+        <div class="card bg-color-lightgrey"><a href="/www/podcasts.html">
+            <div class="card-header header text-color-brown">Podcasts</div>
+            <div class="card-footer text-color-white">Podcasts to listen to!</div>
+          </a>
+        </div>0
+
+        <div class="card bg-color-lightgrey"><a href="/www/books.html">
+            <div class="card-header header  text-color-brown">Books</div>
+            <div class="card-footer text-color-white">Give these a read!</div>
+          </a>
+        </div>
+
+        <div class="card bg-color-lightgrey"><a href="/www/movies.html">
+            <div class="card-header header text-color-brown">Movies</div>
+            <div class="card-footer text-color-white">Must-watches this season!</div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="view view-main">
+      <!-- component will apply to all pages in view -->
+      <!-- Bottom Toolbar -->
+
+
+      <div class="page bg-color-grey" data-name="home">
+        <!-- component is fixed to the page -->
+        <div class="navbar bg-color-brown">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title ">Podcasts <a href="#" class="panel-open" data-panel="right"><i
+                  class="icon f7-icons">layers_alt</i></a></div>
+
+
+          </div>
+
+        </div>
+        <div class="page-content">
+
+          <div class="card card-expandable">
+            <div class="card-content bg-color-darkgrey text-color-white">
+              <div class="bg-color-brown" style="height: 300px">
+                <div class="card-header text-color-white display-block">Movie 1<br />
+                  <small style="opacity: 0.7">The Grinch</small>
+                </div>
+                <a href="#" class="link card-close card-opened-fade-in color-white"
+                  style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <a href="https://www.youtube.com/watch?v=_UOh0UX3alI">
+                  <p> The Grinch</p>
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae diam pharetra, tempus augue vel,
+                  laoreet mi. Suspendisse tristique pharetra augue, eu facilisis mi venenatis et. Vivamus ultricies
+                  augue in lorem ultricies, vitae elementum risus placerat. Aliquam nec elit id mi tincidunt feugiat nec
+                  in lectus. Vivamus condimentum commodo ex, ut maximus ipsum condimentum vel. In quis cursus justo.
+                  Nulla ligula eros, interdum ut feugiat at, placerat quis justo. Nullam sit amet venenatis tellus.
+                  Morbi sodales non turpis at luctus. Phasellus non nisl varius, vulputate erat id, scelerisque purus.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-expandable">
+            <div class="card-content bg-color-darkgrey text-color-white">
+              <div class="bg-color-brown" style="height: 300px">
+                <div class="card-header text-color-white display-block">Podcast 2<br />
+                  <small style="opacity: 0.7">Don't Worry Darling</small>
+                </div>
+                <a href="#" class="link card-close card-opened-fade-in color-white"
+                  style="position: absolute; right: 15px; top: 15px">
+                  <i class="icon f7-icons">xmark_circle_fill</i>
+                </a>
+              </div>
+              <div class="card-content-padding">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae diam pharetra, tempus augue vel,
+                  laoreet mi. Suspendisse tristique pharetra augue, eu facilisis mi venenatis et. Vivamus ultricies
+                  augue in lorem ultricies, vitae elementum risus placerat. Aliquam nec elit id mi tincidunt feugiat nec
+                  in lectus. Vivamus condimentum commodo ex, ut maximus ipsum condimentum vel. In quis cursus justo.
+                  Nulla ligula eros, interdum ut feugiat at, placerat quis justo. Nullam sit amet venenatis tellus.
+                  Morbi sodales non turpis at luctus. Phasellus non nisl varius, vulputate erat id, scelerisque purus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <script src="cordova.js"></script>
+      <script src="js/framework7-bundle.min.js"></script>
+      <script src="js/index.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+https://framework7.io/docs/cards#css-variables
