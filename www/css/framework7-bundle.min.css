@@ -9,17 +9,16 @@
  *
  * Released on: September 14, 2022
  */
- @font-face {
+@font-face {
     font-family: 'Framework7 Icons';
     font-style: normal;
     font-weight: 400;
     src: local('Framework7 Icons'), local('Framework7Icons-Regular'),
-      url('../fonts/Framework7Icons-Regular.woff2') format('woff2'), url('../fonts/Framework7Icons-Regular.woff')
-        format('woff'), url('../fonts/Framework7Icons-Regular.ttf') format('truetype');
-  }
-  
-  .f7-icons,
-  .framework7-icons {
+        url('../fonts/Framework7Icons-Regular.woff2') format('woff2'), url('../fonts/Framework7Icons-Regular.woff') format('woff'), url('../fonts/Framework7Icons-Regular.ttf') format('truetype');
+}
+
+.f7-icons,
+.framework7-icons {
     font-family: 'Framework7 Icons';
     font-weight: normal;
     font-style: normal;
@@ -38,7 +37,8 @@
     -moz-font-feature-settings: 'liga=1';
     -moz-font-feature-settings: 'liga';
     font-feature-settings: 'liga';
-  }
+}
+
 :root {
     --f7-theme-color: #007aff;
     --f7-theme-color-rgb: 0, 122, 255;
@@ -369,12 +369,19 @@
 .bg-color-red {
     --f7-theme-color-bg-color: #ff3b30
 }
+
 .bg-color-lightgrey {
     --f7-theme-color-bg-color: rgb(189, 189, 189);
 }
+
 .bg-color-darkgrey {
     --f7-theme-color-bg-color: rgb(79, 79, 79);
 }
+
+.bg-color-darkishgrey {
+    --f7-theme-color-bg-color: rgb(107, 107, 107);
+}
+
 .border-color-red {
     --f7-theme-color-border-color: #ff3b30
 }
@@ -398,12 +405,15 @@
 .bg-color-green {
     --f7-theme-color-bg-color: #4cd964
 }
-.bg-color-brown{
+
+.bg-color-brown {
     --f7-theme-color-bg-color: #674122
 }
+
 .text-color-brown {
     --f7-theme-color-text-color: #674122
 }
+
 .border-color-green {
     --f7-theme-color-border-color: #4cd964
 }
